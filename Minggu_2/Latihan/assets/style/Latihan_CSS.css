@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+.paragraf_pembuka::before {
+  content: open-quote;
+}
+.paragraf_pembuka::after {
+  content: close-quote;
+}
+
+.paragraf_pembuka::before,
+.paragraf_pembuka::after {
+  /* display: inline-block; */
+  vertical-align: bottom;
+  position: relative;
+  top: 0.2em;
+  color: blue;
+  font-size: 4em;
+}
+
+.paragraf_pembuka {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1ff;
+}
+
+.top_nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.top_nav a {
+  color: #f2f2f2;
+  text-align: center;
+  float: left;
+  padding: 14px 16px;
+}
+
+.top_nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {
+  display: flex;
+  background-color: cadetblue;
+  padding: 8px;
+  float: left;
+  gap: 2em;
+}
+
+.column_side {
+  width: 25%;
+}
+
+.column_middle {
+  width: 50%;
+}
+
+.row p {
+  text-align: justify;
+}
+
+.footer {
+  background-color: burlywood;
+  padding: 10px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_container {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px;
+}
+
+.item_grid {
+  background-color: crimson;
+  padding: 10px;
+}
+
+/* Sembunyikan teks yang tidak ditampilkan secara menyeluruh */
+.read-more-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* Tampilkan teks saat checkbox "Read More" dicentang */
+#read-more-toggle:checked + .read-more-content {
+  height: auto;
+}
+
+/* Teks tombol "Read More" */
+.read-more-button {
+  cursor: pointer;
+  color: blue;
+  display: block;
+}
+
+/* Ganti teks tombol menjadi "Show Less" saat teks ditampilkan */
+#read-more-toggle:checked + .read-more-content + .read-more-button::after {
+  content: "Show Less";
+}
+
+/* Ganti kembali teks tombol menjadi "Read More" saat teks disembunyikan */
+.read-more-content + .read-more-button::after {
+  content: "Read More";
+}
