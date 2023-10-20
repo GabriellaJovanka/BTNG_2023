@@ -1,0 +1,26 @@
+* {
+  /* font-family: "Gabarito", sans-serif;
+  font-family: "Pixelify Sans", sans-serif; */
+  font-family: "Playfair Display", serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+body {
+  background-color: black;
+}
+
+.nav-item a:hover {
+    color: white !important;
+    background-color: black !important;
+}
+
+/* .navbar {
+  background: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(
+    10px
+  ); 
+  -webkit-backdrop-filter: blur(10px); 
+} */
+/* Warna latar belakang transparan */
+/* Efek blur dengan intensitas 10px (sesuaikan sesuai keinginan) */
+/* Untuk browser Safari */

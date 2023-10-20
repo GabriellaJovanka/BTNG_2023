@@ -1,0 +1,63 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-item a:hover {
+  background: rgb(159, 255, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(159, 255, 250, 1) 0%,
+    rgba(126, 217, 255, 1) 16%,
+    rgba(87, 164, 255, 1) 32%,
+    rgba(88, 136, 255, 1) 50%,
+    rgba(130, 136, 255, 1) 68%,
+    rgba(176, 151, 255, 1) 84%
+  );
+  border-radius: 20px;
+  color: black !important;
+}
+
+.bg-light .container .d-flex a:hover {
+  background: rgb(159, 255, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(159, 255, 250, 1) 0%,
+    rgba(126, 217, 255, 1) 16%,
+    rgba(87, 164, 255, 1) 32%,
+    rgba(88, 136, 255, 1) 50%,
+    rgba(130, 136, 255, 1) 68%,
+    rgba(176, 151, 255, 1) 84%
+  );
+  color: black !important;
+  border: 2px solid black;
+}
+
+form button:hover {
+  background: rgb(159, 255, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(159, 255, 250, 1) 0%,
+    rgba(126, 217, 255, 1) 16%,
+    rgba(87, 164, 255, 1) 32%,
+    rgba(88, 136, 255, 1) 50%,
+    rgba(130, 136, 255, 1) 68%,
+    rgba(176, 151, 255, 1) 84%
+  );
+  color: black !important;
+  border: 2px solid black !important;
+}
+
+footer {
+  background-image: linear-gradient(
+    to right,
+    rgba(159, 255, 250, 1) 0%,
+    rgba(126, 217, 255, 1) 16%,
+    rgba(87, 164, 255, 1) 32%,
+    rgba(88, 136, 255, 1) 50%,
+    rgba(130, 136, 255, 1) 68%,
+    rgba(176, 151, 255, 1) 84%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}

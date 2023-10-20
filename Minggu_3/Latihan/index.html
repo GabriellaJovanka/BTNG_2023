@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS Bootstrap -->
+    <title>Titan Hub</title>
+
+    <!-- CSS Bootsrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,167 +13,700 @@
       crossorigin="anonymous"
     />
 
-    <title>Belajar Bootstrap</title>
-    <style>
-      body {
-        background-color: whitesmoke;
-      }
-    </style>
+    <!-- CSS External -->
+    <link rel="stylesheet" href="./Assets/Style/style.css" />
+
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&family=Pixelify+Sans&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- Font Size, Font Weight,  -->
-    <div class="p-5 mt-4 mx-3 mb-4 bg-light shadow-lg fw-bolder rounded-5">
-      <h1 class="text-dark fw-bold">Hello Gabriella Jovanka Bustan</h1>
-    </div>
-    <br />
-    <div class="w-77 ms-5 me-5 mb-4 bg-darktext-light p-4 text-center">
-      <h1 class="fw-bold bg-dark text-light rounded-5 p-3 shadow-lg">
-        Welcome to Universitas Dian Nuswantoro
-      </h1>
-    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">TITAN HUB </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark fs-5 fw-bold" href="#home">Home</a>
+            </li>
 
-    <h1 class="ms-3 fw-bolder fs-2 text-start">Hello</h1>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fs-5 fw-bold m-0 ms-lg-3"
+                href="#member"
+                >Member</a
+              >
+            </li>
 
-    <!-- Flexbox -->
-    <div class="d-flex mb-3">
-      <div class="box p-3 bg-light text-secondary fw-bold border border-dark">
-        Box 1
-      </div>
-      <div
-        class="bg-secondary text-light p-3 box fw-bold border border-dark border-start-0"
-      >
-        Box 2
-      </div>
-      <div class="bg-dark box p-3 text-light border border-dark border-start-0">
-        Box 3
-      </div>
-    </div>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fs-5 fw-bold m-0 ms-lg-3"
+                href="#about"
+                >About</a
+              >
+            </li>
 
-    <div class="d-flex flex-row-reverse mb-3">
-      <div
-        class="box p-3 bg-light text-secondary fw-bold border border-1 border-primary rounded-pill"
-      >
-        Box 1
-      </div>
-      <div
-        class="bg-secondary text-light p-3 box fw-bold border border-3 border-warning border-end-0 rounded-circle"
-      >
-        Box 2
-      </div>
-      <div
-        class="bg-dark box p-3 text-light fw-bold border border-5 border-light border-end-0 rounded"
-      >
-        Box 3
-      </div>
-    </div>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fs-5 fw-bold m-0 ms-lg-3"
+                href="#coach"
+                >Coach</a
+              >
+            </li>
 
-    <p class="text-center fw-bold">justify-content-between</p>
-
-    <div class="d-flex justify-content-between mb-3">
-      <div class="box p-3 bg-success text-light fw-bold">Box 1</div>
-      <div class="bg-secondary text-light p-3 box fw-bold">Box 2</div>
-      <div class="bg-dark box p-3 text-light">Box 3</div>
-    </div>
-
-    <p class="text-center fw-bold">justify-content-around</p>
-
-    <div class="d-flex justify-content-around">
-      <div class="box p-3 bg-success text-light fw-bold">Box 1</div>
-      <div class="bg-secondary text-light p-3 box fw-bold">Box 2</div>
-      <div class="bg-dark box p-3 text-light">Box 3</div>
-    </div>
-    <br />
-
-    <!-- Layout Bootstrap -->
-    <div class="row">
-      <div class="col-1 bg-primary text-light">Col 1</div>
-      <div class="col-1 bg-secondary text-light">Col 2</div>
-      <div class="col-1 bg-success text-light">Col 3</div>
-      <div class="col-1 bg-danger text-light">Col 4</div>
-      <div class="col-1 bg-warning text-light">Col 5</div>
-      <div class="col-1 bg-info text-light">Col 6</div>
-      <div class="col-1 bg-light text-dark">Col 7</div>
-      <div class="col-1 bg-dark text-light">Col 8</div>
-      <div class="col-1 bg-primary text-light">Col 9</div>
-      <div class="col-1 bg-secondary text-light">Col 10</div>
-      <div class="col-1 bg-success text-light">Col 11</div>
-      <div class="col-1 bg-danger text-light">Col 12</div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-6 bg-info text-light">Col 1</div>
-      <div class="col-6 bg-success text-light">Col 1</div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-4 bg-dark text-light">Col 1</div>
-      <div class="col-4 bg-secondary text-light">Col 1</div>
-      <div class="col-4 bg-success text-light">Col 1</div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-8 bg-primary text-light">Col 1</div>
-      <div class="col-4 bg-dark text-light">Col 1</div>
-    </div>
-    <br />
-    <br />
-    <div class="row">
-      <div class="col-12 bg-light shadow-lg text-dark text-center p-4 fw-bold">
-        <p class="text-center fw-bolder">Judul Halaman (Col 12)</p>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fs-5 fw-bold m-0 ms-lg-3"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-4 p-2 bg-secondary text-light">
-        <p class="text-center">Sidebar Col 4</p>
-        <ul ms-3>
-          <li>Menu 1</li>
-          <li>Menu 2</li>
-          <li>Menu 3</li>
-        </ul>
-      </div>
-      <div class="col-8 bg-dark text-light">
-        <p class="text-center">Content Col 8</p>
-        <div class="row">
-          <div class="col-3 bg-light text-dark">
-            <p class="text-center">Card 1 (Col 3)</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a
-              obcaecati, voluptatum aliquid dolor ipsa, doloribus odio maiores
-              omnis ipsam perferendis ab odit alias, perspiciatis numquam
-              sapiente dolorem accusamus atque?
-            </p>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section id="home">
+      <div class="container bg-white">
+        <div class="row gy-3 vh-100 align-items-center">
+          <div class="col-12 col-lg-6">
+            `
+            <h1 style="font-size: 3.8em">
+              Get your fit and strong TITAN BODY <br />
+              with TITAN HUB
+            </h1>
           </div>
-          <div class="col-3 bg-secondary text-light">
-            <p class="text-center">Card 2 (Col 3)</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a
-              obcaecati, voluptatum aliquid dolor ipsa, doloribus odio maiores
-              omnis ipsam perferendis ab odit alias, perspiciatis numquam
-              sapiente dolorem accusamus atque?
-            </p>
+
+          <div class="col-12 col-lg-6">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                  <img
+                    src="./Assets/Image/gym1.png"
+                    class="d-block w-100 rounded-4"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Assets/Image/gym2.png"
+                    class="d-block w-100 rounded-4"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Assets/Image/gym3.png"
+                    class="d-block w-100 rounded-4"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Assets/Image/gym4.jpg"
+                    class="d-block w-100 rounded-4"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
-          <div class="col-3 bg-light text-dark">
-            <p class="text-center">Card 3 (Col 3)</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a
-              obcaecati, voluptatum aliquid dolor ipsa, doloribus odio maiores
-              omnis ipsam perferendis ab odit alias, perspiciatis numquam
-              sapiente dolorem accusamus atque?
-            </p>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Member Start -->
+    <section id="member">
+      <div class="container vh-100 gy-3 bg-secondary">
+        <div class="title text-center mb-4">
+          <h1 class="fw-bold p-5">Our Membership</h1>
+        </div>
+
+        <div class="row justify-content-center text-center gap-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card w-1003">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Original Membership</h4>
+                <p>Suitable for you who want to go to the gym regularly</p>
+                <span>Rp</span>
+                <span class="fw-bold" style="font-size: 2.8em">300.000</span>
+                <span>/months</span> <br />
+                <br />
+                <ul class="text-start">
+                  <li>No need to pay daily</li>
+                  <li>Full access to gym facilities</li>
+                  <li>Welcome to utilize the gym facilities until midnight</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">Decide on This</a>
+              </div>
+            </div>
           </div>
-          <div class="col-3 bg-secondary text-light">
-            <p class="text-center">Card 4 (Col 3)</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a
-              obcaecati, voluptatum aliquid dolor ipsa, doloribus odio maiores
-              omnis ipsam perferendis ab odit alias, perspiciatis numquam
-              sapiente dolorem accusamus atque?
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Training Membership</h4>
+                <p>Train specifically and regularly with our coach</p>
+                <span>Rp</span>
+                <span class="fw-bold" style="font-size: 2.8em">300.000</span>
+                <span>/months</span> <br />
+                <br />
+                <ul class="text-start">
+                  <li>Personal coach</li>
+                  <li>Regular training schedule</li>
+                  <li>Training program that suits you</li>
+                  <li>Nutrition consultation</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">Decide on This</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Package Membership</h4>
+                <p>Be active members and train regularly</p>
+                <span>Rp</span>
+                <span class="fw-bold" style="font-size: 2.8em">300.000</span>
+                <span>/months</span> <br />
+                <br />
+                <ul class="text-start">
+                  <li>Personal coach</li>
+                  <li>Regular training schedule</li>
+                  <li>Training program that suits you</li>
+                  <li>Full access to both membership</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">Decide on This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Member End -->
+
+    <!-- About Start -->
+    <section id="about">
+      <div class="container gy-3 vh-100 bg-light">
+        <div class="title text-center mb-4 mt-5">
+          <h1 class="p-5 fw-bold">About Titan Hub</h1>
+        </div>
+        <div class="row gy-3 align-items-center">
+          <div class="col-12 col-lg-6">
+            <img
+              src="./Assets/Image/about.png"
+              class="img-fluid"
+              alt=""
+              style="border-radius: 10px"
+            />
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <p style="text-align: center" class="fw-bolder">
+              Titan Hub, established in 2015, stands as a fitness haven,
+              dedicated to the pursuit of strength and well-being. With a legacy
+              of over six years, it has become an emblem of dedication, offering
+              state-of-the-art equipment and expert guidance to its members. The
+              gym prides itself on fostering a vibrant community of fitness
+              enthusiasts who share a common commitment to achieving their
+              fitness goals. Titan Hub is not just a place to work out; it's a
+              destination where individuals embark on transformative fitness
+              journeys, where sweat and determination converge to sculpt
+              stronger, healthier lives. Nestled in the heart of the city, Titan
+              Hub welcoming environment and cutting-edge facilities make it a
+              fitness sanctuary that has consistently evolved to meet the
+              ever-changing needs of its members. With a rich history and a
+              passion for fitness, Titan Hub continues to inspire and empower
+              its community, remaining a timeless symbol of dedication and
+              excellence in the world of fitness and well-being.
             </p>
           </div>
         </div>
       </div>
-      <div class="col-12 p-2 bg-dark text-light text-center">
-        Footer (Col 12)
+    </section>
+    <!-- About End -->
+
+    <!-- Sub Unit Start -->
+    <section id="about">
+      <div class="container bg-secondary">
+        <div class="title text-center mb-4 p-2">
+          <h1 class="fw-bold">Sub Unit</h1>
+        </div>
+
+        <div class="row gap-4 gy-2 p-3 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-2">
+            <div
+              class="box d-flex border border-2 border-dark w-100 rounded p-3 gap-3 align-items-center"
+            >
+              <div class="logo border border-dark p-2 rounded bg-light">
+                <i class="fa-solid fa-dumbbell fs-2"></i>
+              </div>
+              <span class="fs-5">Weightlift</span>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div
+              class="box d-flex border border-2 border-dark rounded p-3 gap-3 align-items-center"
+            >
+              <div class="logo border border-dark p-2 rounded bg-light">
+                <i class="fa-solid fa-wifi fs-2"></i>
+              </div>
+              <span class="fs-5">Yoga</span>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div
+              class="box d-flex border border-2 border-dark rounded p-3 gap-3 align-items-center"
+            >
+              <div class="logo border border-dark p-2 rounded bg-light">
+                <i class="fa-solid fa-person-running fs-2"></i>
+              </div>
+              <span class="fs-5">Zumba</span>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-4 col-lg-2">
+            <div
+              class="box d-flex border border-2 border-dark rounded p-3 gap-3 align-items-center"
+            >
+              <div class="logo border border-dark p-2 rounded bg-light">
+                <i class="fa-solid fa-user-ninja fs-2"></i>
+              </div>
+              <span class="fs-5">Boxing</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <!-- Sub Unit End -->
+
+    <!-- Coach Start -->
+    <section id="coach">
+      <div class="container p-5 bg-light">
+        <div class="title text-center mb-4">
+          <h1 class="fw-bold">Coach</h1>
+        </div>
+
+        <!-- Carousel Card Start -->
+        <div id="carouselCoach" class="carousel slide carousel-dark">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./Assets/Image/luke zocchi.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">
+                          Weightlift Trainer
+                        </h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./Assets/Image/cristi christensen.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Yoga Trainer</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./Assets/Image/freddie roach.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Boxing Trainer</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./Assets/Image/vijaya tupurani.jpeg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Zumba Trainer</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselCoach"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselCoach"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel Card End -->
+    <!-- Coach End -->
+
+    <!-- FAQ Start -->
+    <section id="coach">
+      <div class="container p-4 bg-secondary">
+        <div class="title text-center">
+          <h1 class="fw-bold mb-4">Frequently Ask Question</h1>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How do I register for Titan Hub membership?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body" style="text-align: justify">
+                To register as a member at Titan Hub, simply follow these steps:
+                Visit our facility or contact us to receive membership
+                information. Choose the membership type that suits you, complete
+                the registration form with your personal details, and agree to
+                our terms and conditions, including facility usage rules and the
+                cancellation policy. Once you've submitted the form and paid the
+                membership fee, we'll provide you with a membership card,
+                allowing you to begin your training immediately. If you have any
+                questions or need assistance, our team is here to help
+                throughout the registration process.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What additional facilities can Titan members enjoy? Hub?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body" style="text-align: justify">
+                In addition to access to the main facilities, our members can
+                enjoy additional facilities such as fitness classes, nutrition
+                consultations, and discounts on certain fitness products.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                3
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Is it permissible to choose more than one membership training
+                class? on Titan Hub?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body" style="text-align: justify">
+                For training membership, you get all class access which exists.
+                Therefore, you are allowed to attend the class anything when you
+                have registered as a training membership.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ End -->
+
+    <!-- Contact Start -->
+    <section id="contact">
+      <div class="container p-4 bg-white">
+        <div class="title text-center mb-3 ">
+          <h1 class="fw-bold">Contact Us</h1>
+        </div>
+
+        <form>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="mb-3">
+                <la3bel for="exampleInputEmail1" class="form-label fw-bold"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control p-3 border-3"
+                  id="exampleInputEmail1"
+                  placeholder="youremail@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label fw-bold"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control p-3 border-3"
+                  placeholder="081347613465"
+                />
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label fw-bold"
+                  >Your Messages</label
+                >
+                <textarea
+                  class="form-control p-3 border-3"
+                  placeholder="Your Messages"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Service Start -->
+    <section id="contact">
+      <div class="container bg-secondary p-4 ">
+        <h1 class="text-center fw-bold mb-5">Our Support</h1>
+
+        <div class="row justify-content-center d-flex bg-primary">
+          <div class="col-12 col-lg-4 ">
+            <h4 class="fw-bold">Titan Hub Fitness Management, LLC</h4>
+
+            <h6>123 Main Street <br>
+              Suite 456 <br>
+              New York, NY 10001 <br>
+              United States</h6> <br>
+
+            <h4 class="fw-bold">Whatsapp</h4>
+            <h6>081347613465</h6>
+
+            <h4 class="fw-bold">Email</h4>
+            <h6>titanhub@gmail.com</h6>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <h4 class="fw-bold">Jam Operasional</h4>
+
+            <h6>Senin - Jumat : 06:00 - 22:00 <br>
+              Sabtu : 06:00 - 21:00 <br>
+              Minggu : 08:00 - 20:00 <br>
+              </h6> <br>
+
+            <h5 class="fw-bold">Libur Nasional (Senin-Jumat) : 10:00 - 18:00</h5>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <h4 class="fw-bold">Find Us</h4>
+            
+            <i class="fab fa-instagram"></i>
+            <span>titan.hub.gym</span> <br> <br>
+
+            <i class="fab fa-tiktok"></i>
+            <span>titan_hub_gym</span> <br> <br>
+
+            <i class="fab fa-facebook-square"></i>
+            <span>TitanHubGym</span> <br> <br>3
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Service End -->
+
+    <!-- Footer Start -->
+    <footer class="p-4 bg-light text-end mt-5">
+      Copyright &copy; 2023 TITAN HUB. All Right Reserved
+    </footer>
+    <!-- Footer End -->
+
 
     <!-- JS Bootstrap -->
     <script
